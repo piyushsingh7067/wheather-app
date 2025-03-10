@@ -17,3 +17,4 @@ document.querySelector('button').addEventListener('click',()=>{
 
 console.log("data");
 console.log("piyush");
+console.log();
