@@ -14,3 +14,6 @@ document.querySelector('button').addEventListener('click',()=>{
    .then(data=> updateTemp(data));       
    
 })   
+
+console.log("data");
+console.log("piyush");
