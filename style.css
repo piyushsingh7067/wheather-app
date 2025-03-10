@@ -1,0 +1,79 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #3172ab;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+}
+
+/* Weather Container Styling */
+.weather-container {
+    background: rgba(167, 135, 135, 0.9);
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 4px 25px rgba(27, 23, 23, 0.1);
+    text-align: center;
+    width: 600px;
+}
+
+.weather-container h1 {
+    font-size: 5em;
+    margin-bottom: 20px;
+    color: #141313;
+}
+
+.weather-container input[type="text"] {
+    width: 90%;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    border: 1px solid #e90a0a;
+    font-size: 2em;
+}
+
+.weather-container button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    font-size: 2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.weather-container button:hover {
+    background-color: #182d1d;
+}
+
+.Weather-info {
+    margin-top: 20px;
+    color: #333;
+    font-size: 1.1em;
+    display: none; /* Initially hidden, it can be shown when weather info is available */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 500px) {
+    .weather-container {
+        width: 260px;
+        padding: 20px;
+    }
+
+    .weather-container h1 {
+        font-size: 1.6em;
+    }
+
+    .weather-container input[type="text"], .weather-container button {
+        width: 90%;
+    }
+}
